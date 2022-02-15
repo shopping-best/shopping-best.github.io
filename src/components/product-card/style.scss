@@ -1,0 +1,118 @@
+.productContainer {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+#productList {
+    list-style: none;
+    padding: 0;
+}
+
+#productList .productItem {
+    position: relative;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 4px;
+    margin: 24px 0;
+    transition: box-shadow 0.2s ease-in 0s, transform 0.2s ease-in 0s;
+}
+
+#productList .productItem:hover {
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 16px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+#productList .rank_badge {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 60px 60px 0 0;
+    border-color: #d5d5d5 transparent transparent transparent;
+}
+
+.rank_badge .rank {
+    position: absolute;
+    top: -56px;
+    left: 9px;
+    color: #fcfcfc;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#productList .productItem:nth-child(1) .rank_badge {
+    border-color: #FFD700 transparent transparent transparent;
+}
+
+#productList .productItem:nth-child(2) .rank_badge {
+    border-color: #9b9b9b transparent transparent transparent;
+}
+
+#productList .productItem:nth-child(3) .rank_badge {
+    border-color: #CD7F32 transparent transparent transparent;
+}
+
+#productList .productImageFigure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-content: center;
+}
+
+#productList .productImage {
+    max-width: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#productList a {
+    text-decoration: none;
+    color: #555;
+}
+
+#productList dl,
+dt,
+dd {
+    padding: 0;
+    margin: 0;
+}
+
+#productList dl {
+    padding: 16px;
+}
+
+#productList .productName h3 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+    word-break: keep-all;
+}
+
+#productList .productPrice {
+    color: #ae0000;
+    font-weight: 900;
+    font-size: 1.05rem;
+}
+
+#productList .price {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+#productList .rocket_logo_wrap {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+
+footer {
+    min-height: 80px;
+    text-align: center;
+}
+
+.p_notice {
+    margin-top: 40px;
+    color: #7a7a7a;
+    font-size: 0.8rem;
+}

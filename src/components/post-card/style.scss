@@ -1,0 +1,55 @@
+.post-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 35px 0;
+    border-bottom: 1px solid #ebebeb;
+    color: #333;
+    cursor: pointer;
+
+    .post-title {
+        display: block;
+        font-weight: 500;
+        font-size: 28px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .post-description {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 28px;
+        color: #666;
+        vertical-align: top;
+        word-break: break-all;
+    }
+
+    .post-details {
+        display: flex;
+        width: 100%;
+        margin-top: 16px;
+        font-size: 14px;
+        color: #aaa;
+
+        .post-category {
+            text-decoration: none;
+            color: #3db39e;
+            cursor: pointer;
+        }
+
+        .post-date {
+            height: 9px;
+            margin: 0 5px;
+
+        }
+    }
+
+    &:hover {
+        .post-title {
+            text-decoration: underline;
+            color: #3db39e;
+        }
+    }
+
+}
