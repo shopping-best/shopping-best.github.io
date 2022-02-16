@@ -1,9 +1,9 @@
-name: Gatsby Publish
+name: Gatsby Publish Gh Pages
 
 on:
   push:
     branches:
-      - draft
+      - master
 
 jobs:
   build:
@@ -11,7 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: Caching Gatsby
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Cache Gatsby
         id: gatsby-cache-build
         uses: actions/cache@v2
         with:
@@ -21,7 +28,6 @@ jobs:
           key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
           restore-keys: |
             ${{ runner.os }}-gatsby-build-
-
       - name: Installing dependencies
         run: npm install
 
