@@ -29,6 +29,7 @@ const Index = () => {
           description
           shortDescription
           author
+          googleSiteVerification
         }
       }
     }

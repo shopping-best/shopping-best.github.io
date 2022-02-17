@@ -54,6 +54,7 @@ export const query = graphql`
         description
         shortDescription
         author
+        googleSiteVerification
       }
     }
   }
