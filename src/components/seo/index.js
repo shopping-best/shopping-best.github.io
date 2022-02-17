@@ -39,7 +39,7 @@ function Seo({ siteMetadata, postMetadata }) {
           content: `website`,
         },
         {
-          property: `google-site-verification`,
+          name: `google-site-verification`,
           content: siteMetadata.googleSiteVerification,
         },
       ]}
